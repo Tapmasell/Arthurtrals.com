@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Travel</title>
+</head>
+
+    
+    <body>
+
+        <nav>
+            <div class="nav__header">
+              <div class="nav__logo">
+                <a href="home.html" class="logo">&#9992; Arthur <span>Travels</span></a>
+                <img src="Pics/logo2.jpeg" alt="" style="height: 67px; vertical-align: middle; margin-left: -15px;">
+              </div>
+              <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
+              </div>
+            </div>
+            <ul class="nav__links" id="nav__links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="About.html">About Us</a></li>
+              <li><a href="package.html">Package</a></li>
+              <li><a href="booking.html">Book For Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        
+
+
+
+          <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us!</p>
+          
+            <div class="contact-container">
+              <form id="contact-form" class="contact-form" onsubmit="sendMessage(event)">
+                <div class="input-group">
+                  <label for="name"><i class="ri-user-line"></i> Your Name</label>
+                  <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+          
+                <div class="input-group">
+                  <label for="email"><i class="ri-mail-line"></i> Your Email</label>
+                  <input type="email" id="email" onblur="validateEmail()" required />
+                <small id="email-error" style="color: red; display: none;">Invalid email address. Please check for typos.</small>
+                </div>
+          
+                <div class="input-group">
+                  <label for="subject"><i class="ri-chat-1-line"></i> Subject</label>
+                  <input type="text" id="subject" name="subject" required placeholder="Enter subject">
+                </div>
+          
+                <div class="input-group">
+                  <label for="message"><i class="ri-edit-line"></i> Your Message</label>
+                  <textarea id="message" name="message" required placeholder="Write your message"></textarea>
+                </div>
+          
+
+                
+                <button onclick="sendMessage(event)">Submit</button>
+              </form>
+            </div>
+          </section>
+
+       
+
+
+
+
+       <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <a href="#" class="logo">&#9992; Arthur <span>Travel</span></a>
+                </div>
+                <p>
+                    Explore the world best destination, enjoy unbeatable price book your perfect getaway instantly.
+                </p>
+                <h4>CONNECT WITH US</h4>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="https://x.com/arthurtravelsgh"><i class="ri-twitter-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/share/15umMj8NCa/?mibextid=wwXIfr"><i class="ri-facebook-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/arthurtravelsgh?igsh=bG4zNmRxM2gydDht&utm_source=qr"><i class="ri-instagram-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/arthur-travels-539739357/"><i class="ri-linkedin-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@arthurtravelsgh?lang=en"><i class="ri-tiktiok-fill"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>QUICK LINKS</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>CONTACT INFO</h4>
+                <ul class="footer__links">
+                    <li><a href="#">&#9742; (+233) 0209887143</a></li>
+                    <li><a href="#">&#9742; (233) 0557009106</a></li>
+                    <li><a href="#">&#9993; info@arthurtravels.com</a></li>
+                    <li><a href="#">&#x2691; Accra - Ghana</a></li>
+                    <li><a href="#">&#9873; Dansoman</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>OUR SERVICES</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Flight Reservation</a></li>
+                    <li><a href="#">Hotel Reservation</a></li>
+                    <li><a href="#">Visa Assistance/ Tour Packages</a></li>
+                    <li><a href="#">Bus Rental</a></li>
+                    <li><a href="#">Passport Acquisition</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright &copy; 2025 &#9992; Arthur Travels. All rights reserved.
+        </div>
+    </footer>
+    
+
+
+
+    <script src="main.js"></script>
+    </body>
+</html>
